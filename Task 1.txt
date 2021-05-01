@@ -1,0 +1,28 @@
+import java.util.Scanner;
+   public class MyClass {
+   public static int gcd(int a, int b)
+    {
+        if (a == 0)
+            return b;
+         
+        return gcd(b%a, a);
+    }
+    public static void main(String args[]) {
+     Scanner input = new Scanner(System.in);
+        System.out.print("enter the first number");
+        int a= input.nextInt();
+         System.out.print("enter the secound number");
+        int b= input.nextInt();
+        int z=a/gcd(a,b);
+        if(z %2 ==0)
+        {
+            System.out.print("player 2 wins");
+        }
+        else{
+             System.out.print("player 1 wins");
+        }
+      }
+    }
+
+
+
